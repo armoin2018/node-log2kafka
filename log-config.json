@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "path": "/path/to/log/file1",
+      "delimiter": ",",
+      "fields": [
+        { "name": "column1" },
+        { "name": "column2" },
+        { "name": "column3" }
+      ],
+      "beginRegex": /^START/,
+      "topic": "topic1-{{column1}}-{{column2}}",
+      "headerIndex": 0,
+      "headerKey": "column1"
+    },
+    {
+      "path": "/path/to/log/file2",
+      "delimiter": "\t",
+      "fields": [
+        { "name": "columnA" },
+        { "name": "columnB" },
+        { "name": "columnC" }
+      ],
+      "beginRegex": /^BEGIN/,
+      "topic": "topic2-{{columnA}}-{{columnC}}",
+      "headerIndex": 1,
+      "headerKey": "columnA"
+    }
+  ]
+}
