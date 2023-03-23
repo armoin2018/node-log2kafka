@@ -1,0 +1,7 @@
+metadata.broker.list: kafka-broker-1:9093,kafka-broker-2:9093
+security.protocol: SSL
+ssl.truststore.location: /path/to/ca-certificate.pem
+ssl.keystore.location: /path/to/client-certificate.p12
+ssl.keystore.password: <client_certificate_password>
+ssl.key.password: <client_key_password>
+ssl.endpoint.identification.algorithm: https
