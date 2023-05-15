@@ -8,7 +8,7 @@
         { "name": "column2" },
         { "name": "column3" }
       ],
-      "beginRegex": /^START/,
+      "beginRegex": "/^START/",
       "topic": "topic1-{{column1}}-{{column2}}",
       "headerIndex": 0,
       "headerKey": "column1"
@@ -21,7 +21,7 @@
         { "name": "columnB" },
         { "name": "columnC" }
       ],
-      "beginRegex": /^BEGIN/,
+      "beginRegex": "/^BEGIN/",
       "topic": "topic2-{{columnA}}-{{columnC}}",
       "headerIndex": 1,
       "headerKey": "columnA"
